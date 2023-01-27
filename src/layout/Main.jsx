@@ -21,7 +21,7 @@ class Main extends React.Component {
   searchMovies = (str, type = "all") => {
     this.setState({ loading: false });
     fetch(
-      `http://www.omdbapi.com/?apikey=${API_KEY}&s=${str}${
+      `http://www.omdbapi.com/?apikey=f7c5d59a&s=${str}${
         type !== "all" ? `&type=${type}` : ""
       }`
     )
